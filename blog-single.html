@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="Site keywords here" />
+    <meta name="description" content="" />
+    <meta name="copyright" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Title -->
+    <title>About us - Crime Management System</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.png" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Nice Select CSS -->
+    <link rel="stylesheet" href="css/nice-select.css" />
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <!-- icofont CSS -->
+    <link rel="stylesheet" href="css/icofont.css" />
+    <!-- Slicknav -->
+    <link rel="stylesheet" href="css/slicknav.min.css" />
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="css/owl-carousel.css" />
+    <!-- Datepicker CSS -->
+    <link rel="stylesheet" href="css/datepicker.css" />
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="loader">
+        <div class="loader-outter"></div>
+        <div class="loader-inner"></div>
+
+        <div class="indicator">
+          <svg width="16px" height="12px">
+            <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+            <polyline
+              id="front"
+              points="1 6 4 6 6 11 10 1 12 6 15 6"
+            ></polyline>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <!-- End Preloader -->
+
+    <!-- Get Pro Button -->
+    <ul class="pro-features">
+      <a class="get-pro" href="#">Emergency</a>
+      <li class="big-title">Are you in any Emergency Condition?</li>
+      <li class="title">Please provide your information:</li>
+      <li>
+        Name: <input type="text" id="nameInput" placeholder="Your Name" />
+      </li>
+      <li>
+        Location:
+        <button onclick="getLocation()" class="btn w-full">
+          Get Current Location
+        </button>
+      </li>
+      <div class="button">
+        <button onclick="confirmAmbulanceCall()" class="btn">
+          Book Ambulance
+        </button>
+        <button onclick="confirmPoliceCall()" class="btn">Call Police</button>
+      </div>
+      <li>
+        Contact Number:
+        <input type="tel" id="contactInput" placeholder="Your Contact Number" />
+      </li>
+      <li>
+        Additional Comments:
+        <textarea
+          id="commentInput"
+          placeholder="Any additional information"
+        ></textarea>
+      </li>
+      <div class="button">
+        <a href="" target="_blank" class="btn" onclick="submitForm()">Submit</a>
+      </div>
+    </ul>
+
+    <!-- Header Area -->
+    <header class="header">
+      <!-- Topbar -->
+      <div class="topbar">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-5 col-12">
+              <!-- Contact -->
+              <ul class="top-link">
+                <li><a href="blog-single.html">About</a></li>
+                <li><a href="policestations.html">Police Stations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="404.html">FAQ</a></li>
+              </ul>
+              <!-- End Contact -->
+            </div>
+            <div class="col-lg-6 col-md-7 col-12">
+              <!-- Top Contact -->
+              <ul class="top-contact">
+                <li><i class="fa fa-phone"></i>7061567967</li>
+                <li>
+                  <i class="fa fa-envelope"></i
+                  ><a href="https://mailto:ujjwalv.ug21.ee@nitp.ac.in/"
+                    >ujjwalv.ug21.ee@nitp.ac.in</a
+                  >
+                </li>
+              </ul>
+              <!-- End Top Contact -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Topbar -->
+      <!-- Header Inner -->
+      <div class="header-inner">
+        <div class="container">
+          <div class="inner">
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-12">
+                <!-- Start Logo -->
+                <div class="logo">
+                  <a href="index.html"
+                    ><img src="SurakshaKavach_transparent.png" alt="#"
+                  /></a>
+                </div>
+                <!-- End Logo -->
+                <!-- Mobile Nav -->
+                <div class="mobile-nav"></div>
+                <!-- End Mobile Nav -->
+              </div>
+              <div class="col-lg-7 col-md-9 col-12">
+                <!-- Main Menu -->
+                <div class="main-menu">
+                  <nav class="navigation">
+                    <ul class="nav menu">
+                      <li>
+                        <a href="index.htmls"
+                          >Home <i class="icofont-rounded-down"></i
+                        ></a>
+                        <ul class="dropdown">
+                          <li class="active"><a href="blog-single.html">About Project</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="data.html">Criminal Record </a></li>
+                      <li>
+                        <a href="registration.html">Complaint Register </a>
+                      </li>
+                      <li><a href="contact.html">Contat us </a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <!--/ End Main Menu -->
+              </div>
+              <div class="col-lg-2 col-12">
+                <div class="get-quote">
+                  <a href="login.html" class="btn">Login / Register</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/ End Header Inner -->
+    </header>
+    <!-- End Header Area -->
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs overlay">
+      <div class="container">
+        <div class="bread-inner">
+          <div class="row">
+            <div class="col-12">
+              <h2>About us</h2>
+              <ul class="bread-list">
+                <li><a href="index.html">Home</a></li>
+                <li><i class="icofont-simple-right"></i></li>
+                <li class="active">About us</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Breadcrumbs -->
+
+    <!-- Single News -->
+    <section class="news-single section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-12">
+            <div class="row">
+              <div class="col-12">
+                <div class="single-main">
+                  <!-- News Head -->
+                  <div class="news-head">
+                    <img src="img/img2.jpg" alt="#" />
+                  </div>
+                  <!-- News Title -->
+                  <h1 class="news-title">
+                    <a href="blog-single.html"
+                      >More than 10 Websites made by me till now.</a
+                    >
+                  </h1>
+                  <!-- Meta -->
+                  <div class="meta">
+                    <div class="meta-left">
+                      <span class="date"
+                        ><i class="fa fa-clock-o"></i>13 April 2024</span
+                      >
+                    </div>
+                    <div class="meta-right">
+                      <span class="comments"
+                        ><a href="#"
+                          ><i class="fa fa-comments"></i>05 Comments</a
+                        ></span
+                      >
+                      <span class="views"
+                        ><i class="fa fa-eye"></i>33K Views</span
+                      >
+                    </div>
+                  </div>
+                  <!-- News Text -->
+                  <div class="news-text">
+                    <p>
+                      This project is a culmination of hard work and dedication.
+                      We embarked on this journey with a clear vision to create
+                      something impactful and meaningful. Our progress has been
+                      steady, overcoming challenges and celebrating successes
+                      along the way.
+                    </p>
+                    <p>
+                      Through meticulous planning and rigorous implementation, i
+                      has successfully navigated the complexities of the
+                      project, overcoming challenges and achieving significant
+                      milestones along the way. My attention to detail,
+                      problem-solving skills, and innovative thinking have been
+                      instrumental in driving the project forward and ensuring
+                      its success.
+                    </p>
+                    <h1 class="news-title">
+                      <a href="blog-single.html">About Me</a>
+                    </h1>
+                    <p>
+                      My name is Ujjwal Verma, and I am a passionate developer
+                      with a Bachelor of Technology [B. Tech] in Electrical
+                      Engineering from the National Institute Of Technology,
+                      Patna (NITP). I have experience in various technical
+                      domains and possess a strong foundation in languages like
+                      HTML, CSS, JavaScript, and React JS, along with expertise
+                      in programming languages such as C and Java. I have
+                      actively contributed to projects like the Food Ordering
+                      Website and the Animated Website CYNTHIA, where I utilized
+                      my skills to create engaging and functional websites.
+                    </p>
+                    <!-- <div class="image-gallery">
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12">
+                          <div class="single-image">
+                            <img src="img" alt="#" />
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+                          <div class="single-image">
+                            <img src="img" alt="#" />
+                          </div>
+                        </div>
+                      </div>
+                    </div> -->
+
+                    <blockquote class="overlay">
+                      <p>
+                        I believe in continuous learning and improvement,
+                        constantly exploring new technologies and honing my
+                        skills. My dedication and commitment to excellence drive
+                        me to deliver high-quality solutions and make a positive
+                        impact in the world of technology.
+                      </p>
+                    </blockquote>
+
+                    <p>
+                      This project is designed to address Crime Management,
+                      offering reporting to crime. Built with a strong
+                      foundation in technologies used i.e , HTML, CSS,
+                      JavaScript.s
+                    </p>
+                  </div>
+                  <div class="blog-bottom">
+                    <!-- Social Share -->
+                    <ul class="social-share">
+                      <li class="facebook">
+                        <a href="#"
+                          ><i class="fa fa-facebook"></i
+                          ><span>Facebook</span></a
+                        >
+                      </li>
+                      <li class="twitter">
+                        <a href="#"
+                          ><i class="fa fa-twitter"></i><span>Twitter</span></a
+                        >
+                      </li>
+                      <li class="google-plus">
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                      </li>
+                      <li class="linkedin">
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                      </li>
+                      <li class="pinterest">
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                      </li>
+                    </ul>
+                    <!-- Next Prev -->
+                    <ul class="prev-next">
+                      <li class="prev">
+                        <a href="#"><i class="fa fa-angle-double-left"></i></a>
+                      </li>
+                      <li class="next">
+                        <a href="#"><i class="fa fa-angle-double-right"></i></a>
+                      </li>
+                    </ul>
+                    <!--/ End Next Prev -->
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="blog-comments">
+                  <h2>All Comments</h2>
+                  <div class="comments-body">
+                    <!-- Single Comments -->
+                    <div class="single-comments">
+                      <div class="main">
+                        <div class="head">
+                          <img src="img/img3.jpg" alt="#" />
+                        </div>
+                        <div class="body">
+                          <h4>Satish Kumar</h4>
+                          <div class="comment-meta">
+                            <span class="meta"
+                              ><i class="fa fa-calendar"></i>April 13,
+                              2024</span
+                            ><span class="meta"
+                              ><i class="fa fa-clock-o"></i>03:38 AM</span
+                            >
+                          </div>
+                          <p>Nice Brother</p>
+                          <a href="#"><i class="fa fa-reply"></i>replay</a>
+                        </div>
+                      </div>
+                    </div>
+                    <!--/ End Single Comments -->
+                    <!-- Single Comments -->
+                    <div class="single-comments left">
+                      <div class="main">
+                        <div class="head">
+                          <img src="img/img4.jpg" alt="#" />
+                        </div>
+                        <div class="body">
+                          <h4>Ujjwal Verma</h4>
+                          <div class="comment-meta">
+                            <span class="meta"
+                              ><i class="fa fa-calendar"></i>April 13,
+                              2024</span
+                            ><span class="meta"
+                              ><i class="fa fa-clock-o"></i>08:00 AM</span
+                            >
+                          </div>
+                          <p>Thank-You So Much !!!!</p>
+                          <a href="#"><i class="fa fa-reply"></i>replay</a>
+                        </div>
+                      </div>
+                    </div>
+                    <!--/ End Single Comments -->
+                    <!-- Single Comments -->
+                    <div class="single-comments">
+                      <div class="main">
+                        <div class="head">
+                          <img src="img/img5.jpg" alt="#" />
+                        </div>
+                        <div class="body">
+                          <h4>Vivek Anand</h4>
+                          <div class="comment-meta">
+                            <span class="meta"
+                              ><i class="fa fa-calendar"></i>April 14,
+                              2024</span
+                            ><span class="meta"
+                              ><i class="fa fa-clock-o"></i>03:00 PM</span
+                            >
+                          </div>
+                          <p>Your Front-End looks pretty Good !!</p>
+                          <a href="#"><i class="fa fa-reply"></i>replay</a>
+                        </div>
+                      </div>
+                    </div>
+                    <!--/ End Single Comments -->
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="comments-form">
+                  <h2>Leave Comments</h2>
+                  <!-- Contact Form -->
+                  <form class="form" method="post" action="mail/mail.php">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-4 col-12">
+                        <div class="form-group">
+                          <i class="fa fa-user"></i>
+                          <input
+                            type="text"
+                            name="first-name"
+                            placeholder="First name"
+                            required="required"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-12">
+                        <div class="form-group">
+                          <i class="fa fa-envelope"></i>
+                          <input
+                            type="text"
+                            name="last-name"
+                            placeholder="Last name"
+                            required="required"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-12">
+                        <div class="form-group">
+                          <i class="fa fa-envelope"></i>
+                          <input
+                            type="email"
+                            name="email"
+                            placeholder="Your Email"
+                            required="required"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-group message">
+                          <i class="fa fa-pencil"></i>
+                          <textarea
+                            name="message"
+                            rows="7"
+                            placeholder="Type Your Message Here"
+                          ></textarea>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-group button">
+                          <button type="submit" class="btn primary">
+                            <i class="fa fa-send"></i>Submit Comment
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                  <!--/ End Contact Form -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-12">
+            <div class="main-sidebar">
+              <!-- Single Widget -->
+              <div class="single-widget search">
+                <div class="form">
+                  <input type="email" placeholder="Search Here..." />
+                  <a class="button" href="#"><i class="fa fa-search"></i></a>
+                </div>
+              </div>
+              <!--/ End Single Widget -->
+              <!-- Single Widget -->
+              <div class="single-widget category">
+                <h3 class="title">Categories</h3>
+                <ul class="categor-list">
+                  <li><a href="#">My Pic</a></li>
+                  <li><a href="#">About Project</a></li>
+                  <li><a href="#">About Me</a></li>
+                  <li><a href="#">My Goals</a></li>
+                  <li><a href="#">Technology Used</a></li>
+                </ul>
+              </div>
+              <!--/ End Single Widget -->
+              <!-- Single Widget -->
+              <div class="single-widget recent-post">
+                <h3 class="title">Recent Projects</h3>
+                <!-- Single Post -->
+                <div class="single-post">
+                  <div class="image">
+                    <img src="img/web1.png" alt="#" />
+                  </div>
+                  <div class="content">
+                    <h5>
+                      <a href="https://ujjwalverma8004.github.io/Cynthia/"
+                        >My Last Website , CYNTHIA.</a
+                      >
+                    </h5>
+                    <ul class="comment">
+                      <li>
+                        <i class="fa fa-calendar" aria-hidden="true"></i>Sep 20,
+                        2023
+                      </li>
+                      <li>
+                        <i class="fa fa-commenting-o" aria-hidden="true"></i>35
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- End Single Post -->
+                <!-- Single Post -->
+                <div class="single-post">
+                  <div class="image">
+                    <img src="img/web2.png" alt="#" />
+                  </div>
+                  <div class="content">
+                    <h5>
+                      <a
+                        href="https://ujjwalverma8004.github.io/Food-Order-Website/"
+                        >Food Ordering Website</a
+                      >
+                    </h5>
+                    <ul class="comment">
+                      <li>
+                        <i class="fa fa-calendar" aria-hidden="true"></i>Sep 22,
+                        2023
+                      </li>
+                      <li>
+                        <i class="fa fa-commenting-o" aria-hidden="true"></i>59
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- End Single Post -->
+                <!-- Single Post -->
+                <div class="single-post">
+                  <div class="image">
+                    <img src="img/web3.png" alt="#" />
+                  </div>
+                  <div class="content">
+                    <h5>
+                      <a
+                        href="https://ujjwalverma8004.github.io/CrimeManagement/login.html"
+                        >Login Page using JavaScript.</a
+                      >
+                    </h5>
+                    <ul class="comment">
+                      <li>
+                        <i class="fa fa-calendar" aria-hidden="true"></i>April
+                        09, 2024
+                      </li>
+                      <li>
+                        <i class="fa fa-commenting-o" aria-hidden="true"></i>44
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- End Single Post -->
+              </div>
+              <!--/ End Single Widget -->
+              <!-- Single Widget -->
+              <!--/ End Single Widget -->
+              <!-- Single Widget -->
+              <div class="single-widget side-tags">
+                <h3 class="title">Tags</h3>
+                <ul class="tag">
+                  <li><a href="#">HTML</a></li>
+                  <li><a href="#">CSS</a></li>
+                  <li><a href="#">TAILWIND</a></li>
+                  <li><a href="#">JAVA-SCRIPT</a></li>
+                  <li><a href="#">VS-CODE</a></li>
+                  <li><a href="#">GITHUB</a></li>
+                  <li><a href="#">GIT</a></li>
+                </ul>
+              </div>
+              <!--/ End Single Widget -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/ End Single News -->
+
+    <!-- Footer Area -->
+    <footer id="footer" class="footer">
+      <!-- Footer Top -->
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="single-footer">
+                <h2>About Devloper</h2>
+                <p>
+                  I am Ujjwal Verma from National Institue of Technology Patna.
+                  3rd year searching for Internship.
+                </p>
+                <!-- Social -->
+                <ul class="social">
+                  <li>
+                    <a href="https://www.instagram.com/ujjwal__verma/"
+                      ><i class="icofont-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://mailto:ujjwalverma8004@gmail.com"
+                      ><i class="icofont-google-plus"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/ujjwalverma8004"
+                      ><i class="ri-github-line"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/ujjwal-verma-53360519b/"
+                      ><i class="icofont-linkedin"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://discordapp.com/users/600746903931715604/"
+                      ><i class="ri-discord-fill"></i
+                    ></a>
+                  </li>
+                </ul>
+                <!-- End Social -->
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="single-footer f-link">
+                <h2>Quick Links</h2>
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-12">
+                    <ul>
+                      <li>
+                        <a href="index.html"
+                          ><i class="fa fa-caret-right" aria-hidden="true"></i
+                          >Home</a
+                        >
+                      </li>
+                      <li>
+                        <a href="blog-single.html"
+                          ><i class="fa fa-caret-right" aria-hidden="true"></i
+                          >About Us</a
+                        >
+                      </li>
+                      <li>
+                        <a href="registration.html"
+                          ><i class="fa fa-caret-right" aria-hidden="true"></i
+                          >Case Register</a
+                        >
+                      </li>
+
+                      <!-- <li>
+                        <a href="#"
+                          ><i class="fa fa-caret-right" aria-hidden="true"></i
+                          >Other Links</a
+                        >
+                      </li> -->
+                    </ul>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-12">
+                    <ul>
+                      <li>
+                        <a href="data.html"
+                          ><i class="fa fa-caret-right" aria-hidden="true"></i
+                          >Our Cases</a
+                        >
+                      </li>
+                      <!-- <li>
+                        <a href="#"
+                          ><i class="fa fa-caret-right" aria-hidden="true"></i
+                          >Consuling</a
+                        >
+                      </li> -->
+                      <!-- <li>
+                        <a href="#"
+                          ><i class="fa fa-caret-right" aria-hidden="true"></i
+                          >Finance</a
+                        >
+                      </li> -->
+                      <!-- <li>
+                        <a href="#"
+                          ><i class="fa fa-caret-right" aria-hidden="true"></i
+                          >Testimonials</a
+                        >
+                      </li> -->
+                      <li>
+                        <a href="#"
+                          ><i class="fa fa-caret-right" aria-hidden="true"></i
+                          >FAQ</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><i class="fa fa-caret-right" aria-hidden="true"></i
+                          >Contact Us</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="single-footer">
+                <h2>Open Hours</h2>
+                <p>
+                  24/7 Online Reporting We are committed to serving you 24/7.
+                  Our portal is always open for your reports and inquiries,
+                  ensuring that help is always just a few clicks away.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="single-footer">
+                <h2 class="text-xl font-bold mb-4">Meet the Developers</h2>
+                <p class="mb-4">
+                  Dive deeper into the minds behind SurakshaKavach. Our team
+                  from the National Institute of Technology Patna is dedicated
+                  to leveraging technology for your safety. Learn more about our
+                  journey, inspiration, and the challenges we overcame.
+                </p>
+                <a
+                  href="https://github.com/ujjwalverma8004/CrimeManagement"
+                  target="_blank"
+                  class="inline-flex items-center justify-center px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75"
+                >
+                  Our Repo - <i class="ri-navigation-fill ml-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/ End Footer Top -->
+      <!-- Copyright -->
+      <div class="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-12">
+              <div class="copyright-content">
+                <p>
+                  © Copyright 2024 | All Rights Reserved by
+                  <a
+                    href="https://www.linkedin.com/in/ujjwal-verma-53360519b/"
+                    target="_blank"
+                    >Ujjwal Verma</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/ End Copyright -->
+    </footer>
+    <!--/ End Footer Area -->
+
+    <!-- jquery Min JS -->
+    <script src="js/jquery.min.js"></script>
+    <!-- jquery Migrate JS -->
+    <script src="js/jquery-migrate-3.0.0.js"></script>
+    <!-- jquery Ui JS -->
+    <script src="js/jquery-ui.min.js"></script>
+    <!-- Easing JS -->
+    <script src="js/easing.js"></script>
+    <!-- Color JS -->
+    <script src="js/colors.js"></script>
+    <!-- Popper JS -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap Datepicker JS -->
+    <script src="js/bootstrap-datepicker.js"></script>
+    <!-- Jquery Nav JS -->
+    <script src="js/jquery.nav.js"></script>
+    <!-- Slicknav JS -->
+    <script src="js/slicknav.min.js"></script>
+    <!-- ScrollUp JS -->
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <!-- Niceselect JS -->
+    <script src="js/niceselect.js"></script>
+    <!-- Tilt Jquery JS -->
+    <script src="js/tilt.jquery.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="js/owl-carousel.js"></script>
+    <!-- counterup JS -->
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- Steller JS -->
+    <script src="js/steller.js"></script>
+    <!-- Wow JS -->
+    <script src="js/wow.min.js"></script>
+    <!-- Magnific Popup JS -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Counter Up CDN JS -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <!-- Google Map API Key JS -->
+    <script src="https://maps.google.com/maps/api/js?key=AIzaSyDGqTyqoPIvYxhn_Sa7ZrK5bENUWhpCo0w"></script>
+    <!-- Gmaps JS -->
+    <script src="js/gmaps.min.js"></script>
+    <!-- Map Active JS -->
+    <script src="js/map-active.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

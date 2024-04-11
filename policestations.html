@@ -1,0 +1,1471 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="Site keywords here" />
+    <meta name="description" content="" />
+    <meta name="copyright" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Title -->
+    <title>About us - Crime Management System</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.png" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Nice Select CSS -->
+    <link rel="stylesheet" href="css/nice-select.css" />
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <!-- icofont CSS -->
+    <link rel="stylesheet" href="css/icofont.css" />
+    <!-- Slicknav -->
+    <link rel="stylesheet" href="css/slicknav.min.css" />
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="css/owl-carousel.css" />
+    <!-- Datepicker CSS -->
+    <link rel="stylesheet" href="css/datepicker.css" />
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="loader">
+        <div class="loader-outter"></div>
+        <div class="loader-inner"></div>
+
+        <div class="indicator">
+          <svg width="16px" height="12px">
+            <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+            <polyline
+              id="front"
+              points="1 6 4 6 6 11 10 1 12 6 15 6"
+            ></polyline>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <!-- End Preloader -->
+
+    <!-- Get Pro Button -->
+    <ul class="pro-features">
+      <a class="get-pro" href="#">Emergency</a>
+      <li class="big-title">Are you in any Emergency Condition?</li>
+      <li class="title">Please provide your information:</li>
+      <li>
+        Name: <input type="text" id="nameInput" placeholder="Your Name" />
+      </li>
+      <li>
+        Location:
+        <button onclick="getLocation()" class="btn w-full">
+          Get Current Location
+        </button>
+      </li>
+      <div class="button">
+        <button onclick="confirmAmbulanceCall()" class="btn">
+          Book Ambulance
+        </button>
+        <button onclick="confirmPoliceCall()" class="btn">Call Police</button>
+      </div>
+      <li>
+        Contact Number:
+        <input type="tel" id="contactInput" placeholder="Your Contact Number" />
+      </li>
+      <li>
+        Additional Comments:
+        <textarea
+          id="commentInput"
+          placeholder="Any additional information"
+        ></textarea>
+      </li>
+      <div class="button">
+        <a href="" target="_blank" class="btn" onclick="submitForm()">Submit</a>
+      </div>
+    </ul>
+
+    <!-- Header Area -->
+    <header class="header">
+      <!-- Topbar -->
+      <div class="topbar">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-5 col-12">
+              <!-- Contact -->
+              <ul class="top-link">
+                <li><a href="blog-single.html">About</a></li>
+                <li><a href="policestations.html">Police Stations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="404.html">FAQ</a></li>
+              </ul>
+              <!-- End Contact -->
+            </div>
+            <div class="col-lg-6 col-md-7 col-12">
+              <!-- Top Contact -->
+              <ul class="top-contact">
+                <li><i class="fa fa-phone"></i>7061567967</li>
+                <li>
+                  <i class="fa fa-envelope"></i
+                  ><a href="https://mailto:ujjwalv.ug21.ee@nitp.ac.in/"
+                    >ujjwalv.ug21.ee@nitp.ac.in</a
+                  >
+                </li>
+              </ul>
+              <!-- End Top Contact -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Topbar -->
+      <!-- Header Inner -->
+      <div class="header-inner">
+        <div class="container">
+          <div class="inner">
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-12">
+                <!-- Start Logo -->
+                <div class="logo">
+                  <a href="index.html"
+                    ><img src="SurakshaKavach_transparent.png" alt="#"
+                  /></a>
+                </div>
+                <!-- End Logo -->
+                <!-- Mobile Nav -->
+                <div class="mobile-nav"></div>
+                <!-- End Mobile Nav -->
+              </div>
+              <div class="col-lg-7 col-md-9 col-12">
+                <!-- Main Menu -->
+                <div class="main-menu">
+                  <nav class="navigation">
+                    <ul class="nav menu">
+                      <li>
+                        <a href="index.html"
+                          >Home <i class="icofont-rounded-down"></i
+                        ></a>
+                        <ul class="dropdown">
+                          <li><a href="blog-single.html">About Project</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="data.html">Criminal Record </a></li>
+                      <li>
+                        <a href="registration.html">Complaint Register </a>
+                      </li>
+                      <li><a href="contact.html">Contat us </a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <!--/ End Main Menu -->
+              </div>
+              <div class="col-lg-2 col-12">
+                <div class="get-quote">
+                  <a href="login.html" class="btn">Login / Register</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/ End Header Inner -->
+    </header>
+    <!-- End Header Area -->
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs overlay">
+      <div class="container">
+        <div class="bread-inner">
+          <div class="row">
+            <div class="col-12">
+              <h2>Police Stations</h2>
+              <ul class="bread-list">
+                <li><a href="index.html">Home</a></li>
+                <li><i class="icofont-simple-right"></i></li>
+                <li class="active">Police Stations</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Breadcrumbs -->
+
+    <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+      <div class="pb-4 bg-white dark:bg-gray-900">
+        <label for="table-search" class="sr-only">Search</label>
+        <div class="relative mt-1">
+          <div
+            class="absolute inset-y-0 rtl:inset-r-0 start-0 flex items-center ps-3 pointer-events-none"
+          >
+            <svg
+              class="w-4 h-4 text-gray-500 dark:text-gray-400"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 20 20"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+              />
+            </svg>
+          </div>
+          <input
+            type="text"
+            id="table-search"
+            class="block pt-2 ps-10 text-sm text-white border border-gray-300 rounded-lg w-80 bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
+            placeholder=".                        Search for Police Station"
+          />
+        </div>
+      </div>
+      <table
+        class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400"
+      >
+        <thead
+          class="text-xs uppercase"
+          style="color: #fefefe; background-color: #1A76D1; dark:bg-gray-700 dark:text-gray-400"
+        >
+          <tr>
+            <th scope="col" class="p-4">
+              <div class="flex items-center">
+                <!-- <input id="checkbox-all-search" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"> -->
+                <label for="checkbox-all-search" class="sr-only"
+                  >checkbox</label
+                >
+              </div>
+            </th>
+            <th scope="col" class="px-6 py-3">City</th>
+            <th scope="col" class="px-6 py-3">Name</th>
+            <th scope="col" class="px-6 py-3">Area</th>
+            <th scope="col" class="px-6 py-3">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Kadamkuan Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Kadamkuan
+            </th>
+            <td class="px-6 py-4">Rajendra Nagar</td>
+            <td class="px-6 py-4">Rajendra Nagar, Patna, Bihar 800016</td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+
+          <!-- Salimpur Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Salimpur
+            </th>
+            <td class="px-6 py-4">Bhagalpur Road</td>
+            <td class="px-6 py-4">Salimpur, Bihar 803202</td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+
+          <!-- Saksohra Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Saksohra
+            </th>
+            <td class="px-6 py-4">Saksohara West</td>
+            <td class="px-6 py-4">Saksohara West, Bihar 803213</td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+
+          <!-- Purhnahiya Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Purhnahiya
+            </th>
+            <td class="px-6 py-4">Puranahiya</td>
+            <td class="px-6 py-4">Puranahiya, Puranhia, Bihar 843334</td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+
+          <!-- Deepnagar Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Deepnagar
+            </th>
+            <td class="px-6 py-4">Kisanbag</td>
+            <td class="px-6 py-4">Kisanbag, Bihar Sharif, Bihar 803216</td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+
+          <!-- Makhdumpur Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Makhdumpur
+            </th>
+            <td class="px-6 py-4">Gumati Line Road</td>
+            <td class="px-6 py-4">Makhdumpur, Bihar 804422</td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+
+          <!-- Bihar Police Headquarters -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Bihar
+            </th>
+            <td class="px-6 py-4">Sheikhpura</td>
+            <td class="px-6 py-4">
+              Nand Gaon, Sheikhpura, Patna, Bihar 800023
+            </td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+
+          <!-- Chowki Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Chowki
+            </th>
+            <td class="px-6 py-4">Ambedakar Nagar</td>
+            <td class="px-6 py-4">
+              New Godown, Rajendra Path Rd, Ambedakar Nagar, Panchaiti Akhara,
+              Gaya, Bihar 823001
+            </td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+          <!-- Kanakpur Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Kanakpur
+            </th>
+            <td class="px-6 py-4">Darbhanga - Sakri Road</td>
+            <td class="px-6 py-4">Kanakpur, Bihar 847239</td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+
+          <!-- Bihar Police Radio Headquarters -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Bihar
+            </th>
+            <td class="px-6 py-4">Rajbanshi Nagar Road</td>
+            <td class="px-6 py-4">
+              Rajbanshi Nagar Rd, North Patel Nagar, Rajbansi Nagar, Patna,
+              Bihar 800023
+            </td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+
+          <!-- Sonepur Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Sonepur
+            </th>
+            <td class="px-6 py-4">Barbatta</td>
+            <td class="px-6 py-4">Barbatta, Sonepur, Bihar 841101</td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+
+          <!-- Vaishali Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Vaishali
+            </th>
+            <td class="px-6 py-4">Basarh</td>
+            <td class="px-6 py-4">Basarh, Bihar 844128</td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+
+          <!-- Khizersarai Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Khizersarai
+            </th>
+            <td class="px-6 py-4">Khizersarai Bypass Road</td>
+            <td class="px-6 py-4">
+              Khizersarai Bypass Road, Khizarsarai, Bihar 824233
+            </td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+
+          <!-- Nawanagar Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Nawanagar
+            </th>
+            <td class="px-6 py-4">Near Police Stasion</td>
+            <td class="px-6 py-4">Nawanagar, Bihar 802129</td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+
+          <!-- Belchhi Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Belchhi
+            </th>
+            <td class="px-6 py-4">Belchhi Road</td>
+            <td class="px-6 py-4">Belchhi, Bihar 803213</td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+
+          <!-- Hajipur Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Hajipur
+            </th>
+            <td class="px-6 py-4">Vaishali</td>
+            <td class="px-6 py-4">Vaishali, Hajipur, Bihar 844101</td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+          <!-- Kharagpur Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Kharagpur
+            </th>
+            <td class="px-6 py-4">Kharagpur - Sultanganj Road</td>
+            <td class="px-6 py-4">Kharagpur, Bihar 813208</td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+
+          <!-- Jhanjharpur Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Jhanjharpur
+            </th>
+            <td class="px-6 py-4">N.H.57</td>
+            <td class="px-6 py-4">Jhanjharpur, Bihar 847404</td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+
+          <!-- Barauni Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Barauni
+            </th>
+            <td class="px-6 py-4">NH 31</td>
+            <td class="px-6 py-4">Barauni, Bihar 851112</td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+
+          <!-- Sherghati Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Sherghati
+            </th>
+            <td class="px-6 py-4">NH 19</td>
+            <td class="px-6 py-4">Sherghati, Bihar 824211</td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+
+          <!-- Biraul Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Biraul
+            </th>
+            <td class="px-6 py-4">NH 57</td>
+            <td class="px-6 py-4">Biraul, Bihar 847203</td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+
+          <!-- Gopalpur Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Gopalpur
+            </th>
+            <td class="px-6 py-4">NH 28</td>
+            <td class="px-6 py-4">Gopalpur, Bihar 847105</td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+
+          <!-- Raxaul Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Raxaul
+            </th>
+            <td class="px-6 py-4">NH 28A</td>
+            <td class="px-6 py-4">Raxaul, Bihar 845305</td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+
+          <!-- Bhabua Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Bhabua
+            </th>
+            <td class="px-6 py-4">NH 30</td>
+            <td class="px-6 py-4">Bhabua, Bihar 821101</td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+          <!-- Bikramganj Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Bikramganj
+            </th>
+            <td class="px-6 py-4">NH 30</td>
+            <td class="px-6 py-4">Bikramganj, Bihar 802212</td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+
+          <!-- Katoria Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Katoria
+            </th>
+            <td class="px-6 py-4">NH 133</td>
+            <td class="px-6 py-4">Katoria, Bihar 813211</td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+
+          <!-- Narkatiaganj Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Narkatiaganj
+            </th>
+            <td class="px-6 py-4">NH 28A</td>
+            <td class="px-6 py-4">Narkatiaganj, Bihar 845455</td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+
+          <!-- Pupri Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Pupri
+            </th>
+            <td class="px-6 py-4">NH 28</td>
+            <td class="px-6 py-4">Pupri, Bihar 843320</td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+
+          <!-- Barauli Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Barauli
+            </th>
+            <td class="px-6 py-4">NH 102</td>
+            <td class="px-6 py-4">Barauli, Bihar 843315</td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+
+          <!-- Teghra Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Teghra
+            </th>
+            <td class="px-6 py-4">NH 31</td>
+            <td class="px-6 py-4">Teghra, Bihar 851133</td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+
+          <!-- Warisnagar Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Warisnagar
+            </th>
+            <td class="px-6 py-4">NH 28</td>
+            <td class="px-6 py-4">Warisnagar, Bihar 848301</td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+
+          <!-- Islampur Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Islampur
+            </th>
+            <td class="px-6 py-4">NH 31</td>
+            <td class="px-6 py-4">Islampur, Bihar 805103</td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+          <!-- Amarpur Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Amarpur
+            </th>
+            <td class="px-6 py-4">NH 333</td>
+            <td class="px-6 py-4">Amarpur, Bihar 811310</td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+
+          <!-- Kishanganj Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Kishanganj
+            </th>
+            <td class="px-6 py-4">Railway Station Road</td>
+            <td class="px-6 py-4">
+              Railway Station Road, Kishanganj, Bihar 855107
+            </td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+
+          <!-- Chandradeep Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Chandradeep
+            </th>
+            <td class="px-6 py-4">Tajpur Road</td>
+            <td class="px-6 py-4">
+              Chandradeep- Tajpur Road, Chandardip, Bihar 811301
+            </td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+
+          <!-- Amnour Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Amnour
+            </th>
+            <td class="px-6 py-4">Balaha</td>
+            <td class="px-6 py-4">Balaha, Bihar 841401</td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+
+          <!-- Jahanabad Mahila Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Jahanabad Mahila
+            </th>
+            <td class="px-6 py-4">Thana Road</td>
+            <td class="px-6 py-4">Thana Rd, Jehanabad, Bihar 804408</td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+
+          <!-- Belaganj Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Belaganj
+            </th>
+            <td class="px-6 py-4">Gumati Line Road</td>
+            <td class="px-6 py-4">Nh83, Belaganj, Bihar 804403</td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+
+          <!-- Chausa Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Chausa
+            </th>
+            <td class="px-6 py-4">Sonar Patti Road</td>
+            <td class="px-6 py-4">Chausa, Bihar 852213</td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+
+          <!-- Harsidhi Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Harsidhi
+            </th>
+            <td class="px-6 py-4">Pakariya</td>
+            <td class="px-6 py-4">Harsidhi Pakariya, Bihar 845437</td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+          <!-- Telhara Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Telhara
+            </th>
+            <td class="px-6 py-4">Telhara Bazar Road</td>
+            <td class="px-6 py-4">Nh33, Telhara, Bihar 801301</td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+
+          <!-- Bidupur Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Bidupur
+            </th>
+            <td class="px-6 py-4">Chak Mangar Road</td>
+            <td class="px-6 py-4">Bidupur, Bihar 844503</td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+
+          <!-- Tekari Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Tekari
+            </th>
+            <td class="px-6 py-4">Bela - Tekari Road</td>
+            <td class="px-6 py-4">Tekari, Bihar 824236</td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+
+          <!-- Kiratpur Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Kiratpur
+            </th>
+            <td class="px-6 py-4">Mukdumpur</td>
+            <td class="px-6 py-4">
+              Mukdumpur, Kiratpur Raja Ram, Bihar 844114
+            </td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+
+          <!-- Bhadokhara Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Bhadokhara
+            </th>
+            <td class="px-6 py-4">National Highway 31</td>
+            <td class="px-6 py-4">
+              National Highway 31, Bhadokhara, Bihar 805110
+            </td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+
+          <!-- Islampur Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Islampur
+            </th>
+            <td class="px-6 py-4">North Patel Nagar</td>
+            <td class="px-6 py-4">
+              Sh 4, North Patel Nagar, Ranapratap Nagar, Islampur, Bihar 801303
+            </td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+
+          <!-- Model Town Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Model Town
+            </th>
+            <td class="px-6 py-4">Jehanabad</td>
+            <td class="px-6 py-4">Nh 83, Jehanabad, Bihar 804408</td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+
+          <!-- Atri Police Station -->
+          <tr class="bg-white border-b border-gray-700 hover:bg-gray-50">
+            <td class="w-4 p-4"></td>
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-black whitespace-nowrap"
+            >
+              Atri
+            </th>
+            <td class="px-6 py-4">Tetua</td>
+            <td class="px-6 py-4">Tetua, Bihar 823311</td>
+            <td class="px-6 py-4">
+              <a
+                href="#"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >Edit</a
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Footer Area -->
+    <footer id="footer" class="footer">
+      <!-- Footer Top -->
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="single-footer">
+                <h2>About Devloper</h2>
+                <p>
+                  I am Ujjwal Verma from National Institue of Technology Patna.
+                  3rd year searching for Internship.
+                </p>
+                <!-- Social -->
+                <ul class="social">
+                  <li>
+                    <a href="https://www.instagram.com/ujjwal__verma/"
+                      ><i class="icofont-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://mailto:ujjwalverma8004@gmail.com"
+                      ><i class="icofont-google-plus"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/ujjwalverma8004"
+                      ><i class="ri-github-line"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/ujjwal-verma-53360519b/"
+                      ><i class="icofont-linkedin"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://discordapp.com/users/600746903931715604/"
+                      ><i class="ri-discord-fill"></i
+                    ></a>
+                  </li>
+                </ul>
+                <!-- End Social -->
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="single-footer f-link">
+                <h2>Quick Links</h2>
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-12">
+                    <ul>
+                      <li>
+                        <a href="index.html"
+                          ><i class="fa fa-caret-right" aria-hidden="true"></i
+                          >Home</a
+                        >
+                      </li>
+                      <li>
+                        <a href="blog-single.html"
+                          ><i class="fa fa-caret-right" aria-hidden="true"></i
+                          >About Us</a
+                        >
+                      </li>
+                      <li>
+                        <a href="registration.html"
+                          ><i class="fa fa-caret-right" aria-hidden="true"></i
+                          >Case Register</a
+                        >
+                      </li>
+
+                      <!-- <li>
+                        <a href="#"
+                          ><i class="fa fa-caret-right" aria-hidden="true"></i
+                          >Other Links</a
+                        >
+                      </li> -->
+                    </ul>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-12">
+                    <ul>
+                      <li>
+                        <a href="data.html"
+                          ><i class="fa fa-caret-right" aria-hidden="true"></i
+                          >Our Cases</a
+                        >
+                      </li>
+                      <!-- <li>
+                        <a href="#"
+                          ><i class="fa fa-caret-right" aria-hidden="true"></i
+                          >Consuling</a
+                        >
+                      </li> -->
+                      <!-- <li>
+                        <a href="#"
+                          ><i class="fa fa-caret-right" aria-hidden="true"></i
+                          >Finance</a
+                        >
+                      </li> -->
+                      <!-- <li>
+                        <a href="#"
+                          ><i class="fa fa-caret-right" aria-hidden="true"></i
+                          >Testimonials</a
+                        >
+                      </li> -->
+                      <li>
+                        <a href="#"
+                          ><i class="fa fa-caret-right" aria-hidden="true"></i
+                          >FAQ</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><i class="fa fa-caret-right" aria-hidden="true"></i
+                          >Contact Us</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="single-footer">
+                <h2>Open Hours</h2>
+                <p>
+                  24/7 Online Reporting We are committed to serving you 24/7.
+                  Our portal is always open for your reports and inquiries,
+                  ensuring that help is always just a few clicks away.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="single-footer">
+                <h2 class="text-xl font-bold mb-4">Meet the Developers</h2>
+                <p class="mb-4">
+                  Dive deeper into the minds behind SurakshaKavach. Our team
+                  from the National Institute of Technology Patna is dedicated
+                  to leveraging technology for your safety. Learn more about our
+                  journey, inspiration, and the challenges we overcame.
+                </p>
+                <a
+                  href="https://github.com/ujjwalverma8004/CrimeManagement"
+                  target="_blank"
+                  class="inline-flex items-center justify-center px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75"
+                >
+                  Our Repo - <i class="ri-navigation-fill ml-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/ End Footer Top -->
+      <!-- Copyright -->
+      <div class="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-12">
+              <div class="copyright-content">
+                <p>
+                  © Copyright 2024 | All Rights Reserved by
+                  <a
+                    href="https://www.linkedin.com/in/ujjwal-verma-53360519b/"
+                    target="_blank"
+                    >Ujjwal Verma</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/ End Copyright -->
+    </footer>
+    <!--/ End Footer Area -->
+
+    <!-- jquery Min JS -->
+    <script src="js/jquery.min.js"></script>
+    <!-- jquery Migrate JS -->
+    <script src="js/jquery-migrate-3.0.0.js"></script>
+    <!-- jquery Ui JS -->
+    <script src="js/jquery-ui.min.js"></script>
+    <!-- Easing JS -->
+    <script src="js/easing.js"></script>
+    <!-- Color JS -->
+    <script src="js/colors.js"></script>
+    <!-- Popper JS -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap Datepicker JS -->
+    <script src="js/bootstrap-datepicker.js"></script>
+    <!-- Jquery Nav JS -->
+    <script src="js/jquery.nav.js"></script>
+    <!-- Slicknav JS -->
+    <script src="js/slicknav.min.js"></script>
+    <!-- ScrollUp JS -->
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <!-- Niceselect JS -->
+    <script src="js/niceselect.js"></script>
+    <!-- Tilt Jquery JS -->
+    <script src="js/tilt.jquery.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="js/owl-carousel.js"></script>
+    <!-- counterup JS -->
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- Steller JS -->
+    <script src="js/steller.js"></script>
+    <!-- Wow JS -->
+    <script src="js/wow.min.js"></script>
+    <!-- Magnific Popup JS -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Counter Up CDN JS -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <!-- Google Map API Key JS -->
+    <script src="https://maps.google.com/maps/api/js?key=AIzaSyDGqTyqoPIvYxhn_Sa7ZrK5bENUWhpCo0w"></script>
+    <!-- Gmaps JS -->
+    <script src="js/gmaps.min.js"></script>
+    <!-- Map Active JS -->
+    <script src="js/map-active.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
