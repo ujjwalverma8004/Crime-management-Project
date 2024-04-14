@@ -1,12 +1,11 @@
 # Crime
 
 ## Live Website Link
-You can test the website here
-[Link to Website]
-(<https://ujjwalverma8004.github.io/Crime-management-Project/>)
+You can test the website here: [Link to Website](https://ujjwalverma8004.github.io/Crime-management-Project/)
 
 ## Overview Video
-[Link to Video](<https://youtu.be/MMHYhQo7Hac>)
+You can watch the overview video here: [Link to Video](https://youtu.be/MMHYhQo7Hac)
+
 
 # SurakshaKavach
 
